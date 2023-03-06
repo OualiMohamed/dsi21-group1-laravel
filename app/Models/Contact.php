@@ -13,4 +13,9 @@ class Contact extends Model
         $myMessage = "This is model message";
         return $myMessage;
     }
+
+    public function getDetails() {
+        $details = ['50% coton', '30% laine', '20% Polyester'];
+        return $details;
+    }
 }

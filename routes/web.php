@@ -23,3 +23,5 @@ Route::get('/test', function () {
 });
 
 Route::get('/contact', [ContactController::class, 'showContact']);
+
+Route::get('/details', [ContactController::class, 'showDetails']);

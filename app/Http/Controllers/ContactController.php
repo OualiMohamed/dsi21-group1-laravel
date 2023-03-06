@@ -13,4 +13,10 @@ class ContactController extends Controller
         $msg = $myContact->getMessage();
         return view('contact', ["message" => $msg] );
     }
+
+    public function showDetails() {
+        $myContact = new Contact;
+        $details = $myContact->getDetails();
+        return view('details', ["details" => $details]);
+    }
 }
